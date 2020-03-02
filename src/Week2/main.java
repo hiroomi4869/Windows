@@ -43,6 +43,7 @@ public class main {
                     break;
                 }
                 LEFT_INPUT++;
+
             }
         }
 
