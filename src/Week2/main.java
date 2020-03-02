@@ -45,7 +45,7 @@ public class main {
                 LEFT_INPUT++;
             }
         }
-        Window window =new Window(list);
+
     }
 
 }
