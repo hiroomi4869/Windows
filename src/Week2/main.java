@@ -2,6 +2,7 @@ package Week2;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 /**Remember to initialize the number.
  * @author Hiroomi
@@ -14,8 +15,9 @@ public class main {
         Integer LEFT_INPUT = 1;
         Integer RIGHT_INPUT = 3;
         Integer LEFT_NUM = 2;
-        Integer i;
-        var list =new ArrayList<String>();
+
+        List a =new Vector();
+
         while (RIGHT_INPUT<=LIMIT) {
 
             if (LEFT_INPUT+LEFT_NUM-1>=RIGHT_INPUT){
@@ -35,7 +37,8 @@ public class main {
                     if (left.getOut().equals(right.getOut())) {
                         String x = left.toString() + "=" + right.toString();
                         System.out.println(x);
-                        list.add(x);
+
+                        a.add(x);
                     }
                 }
 
@@ -46,6 +49,14 @@ public class main {
 
             }
         }
+
+        for (Object s:a
+             ) {
+            System.out.println(s);
+        }
+        MyFrame myFrame=new MyFrame(a);
+
+
 
     }
 
